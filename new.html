@@ -1,0 +1,86 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+
+<script>
+        var cl1 = 0;
+        var max_val=8;
+          $('document').ready(function(){
+   
+          $('.whatsapp').click(function(){
+          cl1++;
+           
+            });
+          $('.final').click(function(e){
+            if(cl1 < max_val){
+            alert("You need to share in Minimum 8 Groups or Friends. "+ eval(parseInt(max_val) - parseInt(cl1)) +" Groups / Friends remaining");
+            e.preventDefault();
+            }    
+          else{
+            window.location.href='http://phonewale.win/order.php';
+         }
+    });
+    
+});
+</script>
+
+
+</head>
+<body>
+<a class="my-link">link</a>
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Human/Bot Verification</h4>
+        </div>
+        <div class="modal-body">
+           <div class="row">
+                 <div class="col-md-12">
+                  <span class="notice"> Dear <font color="red"></font> For Prevent Users from Order More Than One Redmi Note 5 Pro, We Need To Verify You. <br>Share Now On Whatsapp to 8 <b>Different</b> Groups / Friends for Buy Now & Enter Delivery Address.</span><br><br>
+                    
+                          <a style="color: white !important;" href="whatsapp://send?text=_Buy Redmi Note 5 Pro Mobile at *2999 Rs* (95% off) in Flash Sale._%0D%0A%0D%0A*Grab this offer now, Deal valid only for First 1,000 Customers. Visit here to Buy-* http://phonewale.win/" data-action="share/whatsapp/share" class="step-wp whatsapp sharing">
+                         Share On Whatsapp <span class="pull-right deliv">
+                                                                                                                                <img src="http://icons.iconarchive.com/icons/dtafalonso/android-l/256/WhatsApp-icon.png" class="img-responsive" width="30px;">
+                                                                                                                                </span>
+                         </a>
+                                    </div>
+            </div>
+             <div class="row">
+            <div class="col-md-12">
+               <br>
+                
+                  
+                    <a style="width:100%; color: white !important;" href="http://phonewale.win/order.php" class="step-final final finals" onclick="alert("hi")">
+                Select Delivery Address<span class="pull-right deliv">
+                                                                                                                                <img src="http://www.freeiconspng.com/uploads/delivery-icon-31.png" class="img-responsive" width="40px;">
+                                                                                                                                </span>
+                
+                </a>
+               
+                 </div>
+            </div>
+            
+            
+            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+            
+            
+            
+            
+
+
+</body>
+</html>
